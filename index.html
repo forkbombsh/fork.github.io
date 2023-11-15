@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quuqququuuququuq uququq</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            animation: scroll-left 20000s linear infinite;
+            position: absolute;
+        }
+
+        .button {
+            background-color: rgb(51 65 85);
+            padding: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 8px;
+            transition: 100ms;
+        }
+
+        .button:hover {
+            background-color: rgb(33, 47, 69);
+        }
+
+        .button:focus {
+            background-color: rgb(71 85 105);
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-800 text-l text-white overflow-x-hidden">
+    <h1 class="text-3xl text-center font-bold">Some random person with some stupid projects</h1>
+    <br>
+    <p class="text-center">
+        Hello
+        <br>
+        i am <span id="ququ"></span>
+        <br><br>i made stuff like<br>
+        <button class="button" id="rootdeleter">this (please dont run it)</button>
+        <button class="button" id="textsin">that (i love badly written code)</button>
+        and
+        <button class="button" id="nothing">nothing</button>
+        <br>
+        <br>
+        so thats who i am and what i do
+        <br>
+        goodbye
+    </p>
+    <iframe id="downloadframe" style="display:none;"></iframe>
+    <script src="script.js"></script>
+</body>
+
+</html>
